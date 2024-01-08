@@ -1,0 +1,1 @@
+mmmmmmm yeah no it's broken. Original is here: https://replit.com/@01000001/RickRoller#index.js the original was able to redirect the request directly, allowing user agents to load the shadertoy metadata naturally, but js after loading the page cannot achive the same thing. Not doable without server side code.... I think? I am happy to be corrected :D
