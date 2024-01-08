@@ -4,7 +4,22 @@
 <body>
 <script>
   console.log(window.location.pathname);
-  console.log(window.navigator.userAgent);
+
+  const userAgent = window.navigator.userAgent;
+  console.log(userAgent);
+  let ua = userAgent.toLowerCase()
+  if (   ua.includes("discord") 
+      || ua.includes("bot") 
+      || ua.includes("developers.google.com") 
+      || ua.includes("whatsapp")
+     ){
+    window.location.replace(`https://www.shadertoy.com/${window.location.pathname}`);
+  }
+  else
+  {
+    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=43");
+  }
+
 </script>
 </body>
 </html>
